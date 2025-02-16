@@ -1,0 +1,15 @@
+﻿{
+  "name": "example-route-matching",
+  "description": "An example of more complex route matching",
+  
+  "route": {
+    "request": {
+      "httpMethod": "GET",
+      "path": "/api/{category:int}/products/{productName}"
+    },
+    "response": {
+      "statusCode": 200,
+      "body": "Hello, World!"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+﻿{
+  "name": "example-echo",
+  "description": "An example of a response that contains values from the request",
+
+  "route": {
+    "request": {
+      "httpMethod": "POST",
+      "path": "/api/echo"
+    },
+    "response": {
+      "statusCode": 200,
+      "body": {
+        "originalRequest": "{{request.body}}"
+      }
+    }
+  }
+}

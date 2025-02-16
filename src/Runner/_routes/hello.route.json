@@ -1,0 +1,10 @@
+﻿{
+  "request": {
+    "httpMethod": "GET",
+    "path": "/api/hello"
+  },
+  
+  "response": {
+    "body": "Hello, World"
+  }
+}

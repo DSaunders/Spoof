@@ -1,0 +1,15 @@
+﻿{
+  "name": "hello-world",
+  "description": "Responds to all GET /api/hello requests with a greeting",
+  
+  "route": {
+    "request": {
+      "httpMethod": "GET",
+      "path": "/api/hello"
+    },
+    "response": {
+      "statusCode": 200,
+      "body": "Hello, World!"
+    }
+  }
+}

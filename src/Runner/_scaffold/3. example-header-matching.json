@@ -1,0 +1,20 @@
+﻿{
+  "name": "example-header-matching",
+  "description": "An example of requests that only match when the correct headers are provided",
+  
+  "route": {
+    "request": {
+      "httpMethod": "GET",
+      "path": "/api/example-header-matching",
+      "headers": {
+        "Accept": "application/json"
+      }
+    },
+    "response": {
+      "statusCode": 200,
+      "body": {
+        "message": "You send a request with a 'Accept: application/json' header!"
+      }
+    }
+  }
+}

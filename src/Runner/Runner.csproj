@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+    
+    <PropertyGroup>        
+        <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+        <AssemblyVersion>0.1.0</AssemblyVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>spoof</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+
+        <PublishDir>..\..\_publish</PublishDir>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Core\Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Remove="_routes\**\*.route.json"/>
+        <None Include="_routes\**\*.route.json"/>
+        
+        <EmbeddedResource Include="_scaffold\*.json" />
+        
+        <None Include="_scaffold\4. example-echo.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="_routes\_temp\other.route.json" />
+      <_ContentIncludedByDefault Remove="_routes\_temp\permissions.route.json" />
+      <_ContentIncludedByDefault Remove="_routes\echo_routes\echo-json-to-json.route.json" />
+      <_ContentIncludedByDefault Remove="_routes\echo_routes\echo-json-to-text.route.json" />
+      <_ContentIncludedByDefault Remove="_routes\echo_routes\echo-text-to-text.route.json" />
+    </ItemGroup>
+
+</Project>

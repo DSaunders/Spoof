@@ -1,0 +1,11 @@
+﻿{
+  "request": {
+    "httpMethod": "GET",
+    "path": "/api/dont-load"
+  },
+
+  "response": {
+    "statusCode": 201,
+    "body": "Hello, World!"
+  }
+}
