@@ -8,7 +8,7 @@ These can be checked in to source control to be used by other developers and in 
 
 ### 1. Download Spoof
 
-Spoof is a single executable. Download the latest version from the 'Releases' page.
+Spoof is a single executable. Download the latest version from the [Releases](https://github.com/DSaunders/Spoof/releases) page.
 
 (consider adding the executable to your `$PATH` so you can run it from anywhere)
 
