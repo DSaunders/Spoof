@@ -30,7 +30,7 @@ $ spoof scaffold list
 
 ## Using a template
 
-To create a new API from the template, pass the template to the `spoof sacffold` command:
+To create a new API from the template, pass the template to the `spoof scaffold` command:
 
 ```bash
 $ spoof scaffold hello-world
